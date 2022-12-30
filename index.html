@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+    <div class="notesApp">
+      <button class="notesNew">
+        <img src="/assets/plus.svg" height="36" alt="">
+      </button>
+      <header class="notesHeader">
+        <h1 class="notesLogo">Notes</h1>
+        <form class="searchForm">
+          <button class="btnAll" name="btnAll">View All</button>
+          <input type="text" class="txtSearch" name="txtSearch">
+          <button class="notesSearch">Search</button>
+        </form>
+      </header>
+
+      <main class="notesList">
+        <!-- <div class="notesItem">
+          <h2></h2>
+          <p>
+            
+          </p>
+          <div class="notesMeta">
+            <button class="notesDelete" data-id="1234"> <img src="/assets/trash.svg" height="12" alt=""> Delete</button>
+          </div>
+        </div>  -->
+
+      </main>
+    </div>
+
+    <div class="notesModal">
+      <div class="modalWrapper">
+        <button class="closeForm"><img src="/assets/close.svg" height="24" alt=""></button>
+        <form class="notesForm">
+          <input required name="noteTitle" class="noteTitle" type="text" />
+          <textarea
+            required
+            name="noteEntry"
+            class="noteEntry"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button name="noteSubmit" class="noteSubmit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

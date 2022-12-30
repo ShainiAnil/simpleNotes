@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right bottom, #333f51, #2a3343, #212835, #181e28, #0f131c);
+    padding:0px 20px;
+    color: #fff;
+}
+
+.notesApp{
+    max-width: 65ch;
+    width:100%;
+    margin:0px auto;
+}
+
+.notesHeader{
+    display:flex;
+    justify-content:space-between;
+}
+.searchForm{
+    margin-top: 20px;
+}
+.notesSearch,.btnAll{
+    margin: 5px;
+    padding: 4px;
+    border-radius: 8px;
+}
+.notesLogo{
+    margin-top:20px;
+    font-size: 2em;
+}
+
+.notesNew{
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border:none;
+    background: rgb(7, 145, 76);
+    cursor: pointer;
+}
+
+/* .notesList{
+
+} */
+
+.notesItem{
+    background: #fff;
+    padding:20px;
+    margin:20px 0px;
+    border-radius: 5px;
+    color:#444;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    box-shadow: 0px 3px 10px  rgba(0,0,0,0.5);
+}
+
+.notesItem h2{
+    font-size: 1.6em;
+    color:#222;
+}
+
+.notesItem p{
+    color:#666;
+}
+
+.notesMeta{
+    display: flex;
+    gap:20px;
+    color:#666;
+    border-top:1px solid #ddd;
+    padding-top:10px;
+    justify-content: end;
+}
+.notesDelete{
+    padding:5px 10px;
+}
+.notesModal{
+    width:100%;
+    min-height: 100vh;
+    position: fixed;
+    inset:0;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(240,240,240, 0.9);
+    place-content: center;
+    grid-template-columns: minmax(auto,65ch);
+    padding:0px 20px;
+    display:none;
+}
+.active{
+    display: grid;
+}
+
+.modalWrapper{
+    background:#fafafa;
+    border-radius: 5px;
+    padding:30px;
+    position: relative;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+}
+.notesForm{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+.noteTitle,
+.noteEntry{
+    padding:10px 10px;    
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    border:1px solid #ddd;
+    border-radius: 5px;
+}
+.noteSubmit{
+    max-width: 180px;
+    padding:10px 0px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    border-radius: 5px;
+    background: #111;
+    border:1px solid #fff;
+    cursor: pointer;
+}
+.closeForm{
+    position: absolute;
+    right: -15px;
+    top:-15px;
+    width:40px;
+    height:40px;
+    background:crimson;
+    border-radius: 50%;
+    cursor: pointer;
+    border:none;
+}
